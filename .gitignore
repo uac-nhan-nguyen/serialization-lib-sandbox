@@ -1,0 +1,47 @@
+# version 0.1.0
+# FOLDERS
+**/node_modules
+**/build
+**/js_build
+**/.cache
+**/.build
+**/.dart_tool
+**/.firebase
+web/src/BlueCode
+**/.idea
+**/cmake-build-debug
+**/secrets
+local
+# **.code-workspace
+\.DS_Store
+
+web/\.firebase/
+platform-bluefigma/web/functions/build_server/config\.json
+\.vscode/launch\.json
+
+# FILE EXT
+**/*.log
+**/*.iml
+**/*.tsv
+**/*.DS_Store
+**/*.cache
+**/.packages
+**/*.lock
+
+# SPECIFIC FILE
+**/out
+**/package-lock.json
+
+# C++
+**/CMakeCache.txt
+**/cmake_install.cmake
+**/Makefile
+**/CMakeFiles/
+
+
+
+api-cpp/k8s/admin-key.json
+api-cpp/k8s/api-secret.json
+server-dart/k8s/bibot-secret.json
+api-cpp/k8s/kubernetes.json
+api-cpp/grpc_health_probe-linux-amd64
