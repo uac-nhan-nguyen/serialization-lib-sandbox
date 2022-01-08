@@ -69,13 +69,13 @@ export function signTx({keyHex, tx}) {
 
 /**
  * @param keyHex {string}
- * @param cborHex {string}
+ * @param data {string}
  * @return {string}
  */
-export function signData({keyHex, cborHex}) {
+export function signData({keyHex, data}) {
   const key = cardano.Bip32PrivateKey.from_bytes(hexToBytes(keyHex));
   const paymentKey = key.derive(0).derive(0).to_raw_key();
-  const signature = paymentKey.sign(hexToBytes(cborHex));
+  const signature = paymentKey.sign(hexToBytes(data));
   return bytesToHex(signature.to_bytes());
 }
 
